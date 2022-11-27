@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D092BA229334CF300639E1D /* ContactsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BA129334CF300639E1D /* ContactsDataManager.swift */; };
 		1D86072B29334176008967C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072A29334176008967C7 /* AppDelegate.swift */; };
 		1D86072D29334176008967C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072C29334176008967C7 /* SceneDelegate.swift */; };
-		1D86072F29334176008967C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072E29334176008967C7 /* ViewController.swift */; };
-		1D86073229334176008967C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D86073029334176008967C7 /* Main.storyboard */; };
+		1D86072F29334176008967C7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072E29334176008967C7 /* ContactsViewController.swift */; };
 		1D86073429334177008967C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D86073329334177008967C7 /* Assets.xcassets */; };
 		1D86073729334177008967C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D86073529334177008967C7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D092BA129334CF300639E1D /* ContactsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDataManager.swift; sourceTree = "<group>"; };
 		1D86072729334176008967C7 /* WowappTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowappTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D86072A29334176008967C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D86072C29334176008967C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D86072E29334176008967C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D86073129334176008967C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D86072E29334176008967C7 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		1D86073329334177008967C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D86073629334177008967C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D86073829334177008967C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +37,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D092B9E2933475800639E1D /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				1D86072C29334176008967C7 /* SceneDelegate.swift */,
+				1D86072A29334176008967C7 /* AppDelegate.swift */,
+				1D86073529334177008967C7 /* LaunchScreen.storyboard */,
+				1D86073329334177008967C7 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		1D092B9F2933477000639E1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D092BA329334DEE00639E1D /* Views */,
+				1D092BA029334CE600639E1D /* ContactsDataManager */,
+				1D86072E29334176008967C7 /* ContactsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1D092BA029334CE600639E1D /* ContactsDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1D092BA129334CF300639E1D /* ContactsDataManager.swift */,
+			);
+			path = ContactsDataManager;
+			sourceTree = "<group>";
+		};
+		1D092BA329334DEE00639E1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1D86071E29334176008967C7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +92,9 @@
 		1D86072929334176008967C7 /* WowappTask */ = {
 			isa = PBXGroup;
 			children = (
-				1D86072A29334176008967C7 /* AppDelegate.swift */,
-				1D86072C29334176008967C7 /* SceneDelegate.swift */,
-				1D86072E29334176008967C7 /* ViewController.swift */,
-				1D86073029334176008967C7 /* Main.storyboard */,
-				1D86073329334177008967C7 /* Assets.xcassets */,
-				1D86073529334177008967C7 /* LaunchScreen.storyboard */,
 				1D86073829334177008967C7 /* Info.plist */,
+				1D092B9F2933477000639E1D /* Controllers */,
+				1D092B9E2933475800639E1D /* Supporting files */,
 			);
 			path = WowappTask;
 			sourceTree = "<group>";
@@ -128,7 +160,6 @@
 			files = (
 				1D86073729334177008967C7 /* LaunchScreen.storyboard in Resources */,
 				1D86073429334177008967C7 /* Assets.xcassets in Resources */,
-				1D86073229334176008967C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D86072F29334176008967C7 /* ViewController.swift in Sources */,
+				1D092BA229334CF300639E1D /* ContactsDataManager.swift in Sources */,
+				1D86072F29334176008967C7 /* ContactsViewController.swift in Sources */,
 				1D86072B29334176008967C7 /* AppDelegate.swift in Sources */,
 				1D86072D29334176008967C7 /* SceneDelegate.swift in Sources */,
 			);
@@ -168,14 +200,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D86073029334176008967C7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D86073129334176008967C7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D86073529334177008967C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -313,9 +337,10 @@
 				INFOPLIST_FILE = WowappTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,9 +366,10 @@
 				INFOPLIST_FILE = WowappTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
