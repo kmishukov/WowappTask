@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1D092BA229334CF300639E1D /* ContactsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BA129334CF300639E1D /* ContactsDataManager.swift */; };
+		1D092BAA2933527900639E1D /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BA82933527900639E1D /* ContactTableViewCell.swift */; };
+		1D092BAB2933527900639E1D /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D092BA92933527900639E1D /* ContactTableViewCell.xib */; };
+		1D092BAE293364D200639E1D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BAD293364D200639E1D /* NetworkManager.swift */; };
+		1D092BB12933653A00639E1D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BB02933653A00639E1D /* Contact.swift */; };
+		1D092BB32933655500639E1D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BB22933655500639E1D /* Group.swift */; };
+		1D092BB729336C7F00639E1D /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BB629336C7F00639E1D /* ContactCellViewModel.swift */; };
+		1D092BB929336E3F00639E1D /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BB829336E3F00639E1D /* ContactViewModel.swift */; };
 		1D86072B29334176008967C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072A29334176008967C7 /* AppDelegate.swift */; };
 		1D86072D29334176008967C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072C29334176008967C7 /* SceneDelegate.swift */; };
 		1D86072F29334176008967C7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072E29334176008967C7 /* ContactsViewController.swift */; };
@@ -17,6 +24,13 @@
 
 /* Begin PBXFileReference section */
 		1D092BA129334CF300639E1D /* ContactsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDataManager.swift; sourceTree = "<group>"; };
+		1D092BA82933527900639E1D /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		1D092BA92933527900639E1D /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		1D092BAD293364D200639E1D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1D092BB02933653A00639E1D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		1D092BB22933655500639E1D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		1D092BB629336C7F00639E1D /* ContactCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
+		1D092BB829336E3F00639E1D /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		1D86072729334176008967C7 /* WowappTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowappTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D86072A29334176008967C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D86072C29334176008967C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +58,7 @@
 				1D86072A29334176008967C7 /* AppDelegate.swift */,
 				1D86073529334177008967C7 /* LaunchScreen.storyboard */,
 				1D86073329334177008967C7 /* Assets.xcassets */,
+				1D86073829334177008967C7 /* Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -51,9 +66,7 @@
 		1D092B9F2933477000639E1D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D092BA329334DEE00639E1D /* Views */,
-				1D092BA029334CE600639E1D /* ContactsDataManager */,
-				1D86072E29334176008967C7 /* ContactsViewController.swift */,
+				1D092BBA29337CF700639E1D /* ContactsViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -61,6 +74,7 @@
 		1D092BA029334CE600639E1D /* ContactsDataManager */ = {
 			isa = PBXGroup;
 			children = (
+				1D092BAF2933653100639E1D /* Models */,
 				1D092BA129334CF300639E1D /* ContactsDataManager.swift */,
 			);
 			path = ContactsDataManager;
@@ -69,8 +83,39 @@
 		1D092BA329334DEE00639E1D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D092BA92933527900639E1D /* ContactTableViewCell.xib */,
+				1D092BA82933527900639E1D /* ContactTableViewCell.swift */,
+				1D092BB629336C7F00639E1D /* ContactCellViewModel.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1D092BAC293364C400639E1D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1D092BAD293364D200639E1D /* NetworkManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1D092BAF2933653100639E1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D092BB22933655500639E1D /* Group.swift */,
+				1D092BB02933653A00639E1D /* Contact.swift */,
+				1D092BB829336E3F00639E1D /* ContactViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D092BBA29337CF700639E1D /* ContactsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1D092BA029334CE600639E1D /* ContactsDataManager */,
+				1D092BA329334DEE00639E1D /* Views */,
+				1D86072E29334176008967C7 /* ContactsViewController.swift */,
+			);
+			path = ContactsViewController;
 			sourceTree = "<group>";
 		};
 		1D86071E29334176008967C7 = {
@@ -92,7 +137,7 @@
 		1D86072929334176008967C7 /* WowappTask */ = {
 			isa = PBXGroup;
 			children = (
-				1D86073829334177008967C7 /* Info.plist */,
+				1D092BAC293364C400639E1D /* Service */,
 				1D092B9F2933477000639E1D /* Controllers */,
 				1D092B9E2933475800639E1D /* Supporting files */,
 			);
@@ -158,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D092BAB2933527900639E1D /* ContactTableViewCell.xib in Resources */,
 				1D86073729334177008967C7 /* LaunchScreen.storyboard in Resources */,
 				1D86073429334177008967C7 /* Assets.xcassets in Resources */,
 			);
@@ -190,10 +236,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D092BAE293364D200639E1D /* NetworkManager.swift in Sources */,
 				1D092BA229334CF300639E1D /* ContactsDataManager.swift in Sources */,
+				1D092BAA2933527900639E1D /* ContactTableViewCell.swift in Sources */,
+				1D092BB729336C7F00639E1D /* ContactCellViewModel.swift in Sources */,
+				1D092BB32933655500639E1D /* Group.swift in Sources */,
 				1D86072F29334176008967C7 /* ContactsViewController.swift in Sources */,
 				1D86072B29334176008967C7 /* AppDelegate.swift in Sources */,
+				1D092BB929336E3F00639E1D /* ContactViewModel.swift in Sources */,
 				1D86072D29334176008967C7 /* SceneDelegate.swift in Sources */,
+				1D092BB12933653A00639E1D /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +386,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9N9MQ3U2TY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WowappTask/Info.plist;
+				INFOPLIST_FILE = "WowappTask/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -363,7 +415,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9N9MQ3U2TY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WowappTask/Info.plist;
+				INFOPLIST_FILE = "WowappTask/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
