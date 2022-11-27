@@ -15,6 +15,12 @@
 		1D092BB32933655500639E1D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BB22933655500639E1D /* Group.swift */; };
 		1D092BB729336C7F00639E1D /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BB629336C7F00639E1D /* ContactCellViewModel.swift */; };
 		1D092BB929336E3F00639E1D /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BB829336E3F00639E1D /* ContactViewModel.swift */; };
+		1D092BBD2933914700639E1D /* MainBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BBC2933914700639E1D /* MainBaseCoordinator.swift */; };
+		1D092BBF293391C000639E1D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BBE293391C000639E1D /* MainCoordinator.swift */; };
+		1D092BC12933963200639E1D /* ContactsBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BC02933963200639E1D /* ContactsBaseCoordinator.swift */; };
+		1D092BC3293396C300639E1D /* ContactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BC2293396C300639E1D /* ContactsCoordinator.swift */; };
+		1D092BC62933984800639E1D /* ContactsBaseCoordinated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BC52933984800639E1D /* ContactsBaseCoordinated.swift */; };
+		1D092BC829339B2F00639E1D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D092BC729339B2F00639E1D /* Coordinator.swift */; };
 		1D86072B29334176008967C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072A29334176008967C7 /* AppDelegate.swift */; };
 		1D86072D29334176008967C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072C29334176008967C7 /* SceneDelegate.swift */; };
 		1D86072F29334176008967C7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86072E29334176008967C7 /* ContactsViewController.swift */; };
@@ -31,6 +37,12 @@
 		1D092BB22933655500639E1D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		1D092BB629336C7F00639E1D /* ContactCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
 		1D092BB829336E3F00639E1D /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		1D092BBC2933914700639E1D /* MainBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseCoordinator.swift; sourceTree = "<group>"; };
+		1D092BBE293391C000639E1D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1D092BC02933963200639E1D /* ContactsBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsBaseCoordinator.swift; sourceTree = "<group>"; };
+		1D092BC2293396C300639E1D /* ContactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCoordinator.swift; sourceTree = "<group>"; };
+		1D092BC52933984800639E1D /* ContactsBaseCoordinated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsBaseCoordinated.swift; sourceTree = "<group>"; };
+		1D092BC729339B2F00639E1D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1D86072729334176008967C7 /* WowappTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowappTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D86072A29334176008967C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D86072C29334176008967C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,10 +124,31 @@
 			isa = PBXGroup;
 			children = (
 				1D092BA029334CE600639E1D /* ContactsDataManager */,
+				1D092BC42933983500639E1D /* Coordinator */,
 				1D092BA329334DEE00639E1D /* Views */,
 				1D86072E29334176008967C7 /* ContactsViewController.swift */,
 			);
 			path = ContactsViewController;
+			sourceTree = "<group>";
+		};
+		1D092BBB2933913C00639E1D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1D092BC729339B2F00639E1D /* Coordinator.swift */,
+				1D092BBC2933914700639E1D /* MainBaseCoordinator.swift */,
+				1D092BBE293391C000639E1D /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1D092BC42933983500639E1D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1D092BC02933963200639E1D /* ContactsBaseCoordinator.swift */,
+				1D092BC52933984800639E1D /* ContactsBaseCoordinated.swift */,
+				1D092BC2293396C300639E1D /* ContactsCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		1D86071E29334176008967C7 = {
@@ -137,6 +170,7 @@
 		1D86072929334176008967C7 /* WowappTask */ = {
 			isa = PBXGroup;
 			children = (
+				1D092BBB2933913C00639E1D /* Coordinator */,
 				1D092BAC293364C400639E1D /* Service */,
 				1D092B9F2933477000639E1D /* Controllers */,
 				1D092B9E2933475800639E1D /* Supporting files */,
@@ -236,15 +270,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D092BC829339B2F00639E1D /* Coordinator.swift in Sources */,
 				1D092BAE293364D200639E1D /* NetworkManager.swift in Sources */,
+				1D092BBF293391C000639E1D /* MainCoordinator.swift in Sources */,
 				1D092BA229334CF300639E1D /* ContactsDataManager.swift in Sources */,
+				1D092BC3293396C300639E1D /* ContactsCoordinator.swift in Sources */,
+				1D092BC62933984800639E1D /* ContactsBaseCoordinated.swift in Sources */,
 				1D092BAA2933527900639E1D /* ContactTableViewCell.swift in Sources */,
 				1D092BB729336C7F00639E1D /* ContactCellViewModel.swift in Sources */,
 				1D092BB32933655500639E1D /* Group.swift in Sources */,
 				1D86072F29334176008967C7 /* ContactsViewController.swift in Sources */,
+				1D092BBD2933914700639E1D /* MainBaseCoordinator.swift in Sources */,
 				1D86072B29334176008967C7 /* AppDelegate.swift in Sources */,
 				1D092BB929336E3F00639E1D /* ContactViewModel.swift in Sources */,
 				1D86072D29334176008967C7 /* SceneDelegate.swift in Sources */,
+				1D092BC12933963200639E1D /* ContactsBaseCoordinator.swift in Sources */,
 				1D092BB12933653A00639E1D /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

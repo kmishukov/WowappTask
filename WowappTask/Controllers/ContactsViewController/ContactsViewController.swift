@@ -7,7 +7,9 @@
 
 import UIKit
 
-final class ContactsViewController: UIViewController {
+final class ContactsViewController: UIViewController, ContactsBaseCoordinated {
+    var coordinator: ContactsBaseCoordinator?
+
     // Views
     private let searchBar = UISearchBar(frame: .zero)
     private let tableView = UITableView(frame: .zero, style: .plain)
@@ -93,9 +95,13 @@ final class ContactsViewController: UIViewController {
 
     // MARK: - Private
 
-    private func showAlert(title: String, message: String) {
+    private func showAlert(title: String, message: String, actions: [UIAlertAction] = []) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        if !actions.isEmpty {
+            actions.forEach { alertController.addAction($0) }
+        } else {
+            alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        }
         present(alertController, animated: true)
     }
 
@@ -103,7 +109,11 @@ final class ContactsViewController: UIViewController {
 
     @objc
     private func addButtonTapped() {
-        showAlert(title: "Action", message: "Add button tapped")
+        let yesAction = UIAlertAction(title: "Yes", style: .default, handler: { [weak self] _ in
+            self?.coordinator?.parentCoordinator?.moveTo(.first)
+        })
+        let noAction = UIAlertAction(title: "No", style: .default)
+        showAlert(title: "Action", message: "Move to First Tab?", actions: [yesAction, noAction])
     }
 
     @objc

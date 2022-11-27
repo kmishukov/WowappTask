@@ -30,7 +30,7 @@ final class NetworkManager {
     }
 }
 
-final class HTTPRequest {
+fileprivate class HTTPRequest {
     static func request(url: URL,
                         parameter: String?,
                         completion: @escaping (_ data: Data?, _ response: URLResponse?, _ error: NetworkError?) -> Void) {
